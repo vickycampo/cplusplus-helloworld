@@ -16,7 +16,7 @@ using namespace std;
 /*******************************/ 
 void classes ()
 {
-	
+	/* LEARNING HOW CLASSES WORK */
 }
 
 
