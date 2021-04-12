@@ -3,7 +3,7 @@
 // by Vicky Campo
 
 #include <iostream>
-#include "date.h"
+#include "date.cpp"
 using namespace std;
 
 /*******************************/ 
@@ -31,12 +31,21 @@ void classes ()
 	
 	Date* defaultDate = new Date(); 
 	Date* schoolStarts = new Date( 8 , 17 , 2020 ); //calling the constructor that calls arguments
+	Date* otherDate = new Date( 8 , 17 , 2020 ); //calling the constructor that calls arguments
 
-	cout << defaultDate->getShortDate() << "\n";
-	cout << schoolStarts->getShortDate() << "\n";
+	// cout << defaultDate->getShortDate() << "\n"; // arrow operator is used when I reference a port of an objec that I habe a pointer to, I use this arrow operator.
+	// cout << schoolStarts->getShortDate() << "\n";
+	
+	cout << defaultDate << "\n"; // arrow operator is used when I reference a port of an objec that I habe a pointer to, I use this arrow operator.
+	cout << schoolStarts << "\n";
 
 	defaultDate->setDate( 20 );
-	cout << defaultDate->getShortDate() << "\n";
+	cout << defaultDate << "\n";
+
+	cout << Date::getNumDates() << "\n";
+
+	cout << ( *defaultDate == *schoolStarts ) << endl;
+	cout << ( *otherDate == *schoolStarts ) << endl;
 }
 
 

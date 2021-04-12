@@ -10,6 +10,7 @@
 #include "pointersReferencesArrays.cpp"
 #include "dynamicMemory.cpp"
 #include "classes.cpp"
+#include "operatorOverloading.cpp"
 using namespace std;
 
 int addTwoNumbers ( int a, int b );
@@ -29,10 +30,11 @@ int main()
 	std::cout << "Your age is " << age << std::endl;
 	std::cin.get();
 	*/
-	//functionsPractice ();
-	//arrays();
-	//strings();
-	//pointersReferencesArrays();
+	// functionsPractice ();
+	// arrays();
+	// trings();
+	// pointersReferencesArrays();
 	// dynamicMemory();
 	classes();
+	// operatorOverloading();
 }
